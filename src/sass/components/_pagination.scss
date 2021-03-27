@@ -1,0 +1,60 @@
+.pages-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  width: 374px;
+}
+a.page {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.page {
+  border: 1px;
+  color: #000000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.current-page {
+  background: #ff6b01;
+  color: white;
+}
+.page:hover {
+  background: #ff6b01;
+  color: white;
+}
+
+.arrow-class {
+  background: #f7f7f7;
+}
+
+@media screen and(min-width:$tablet) {
+  .pagination-desktop {
+    display: flex;
+  }
+  .pagination-mobile {
+    display: none;
+  }
+}
+
+@media screen and(max-width:$tablet) {
+  .pagination-desktop {
+    display: none;
+  }
+  .pagination-mobile {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+}

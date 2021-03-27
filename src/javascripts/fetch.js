@@ -1,17 +1,14 @@
+import modalTpl from '../templates/modal.hbs';
+
 const apiKey = `00247c3a79a23ea8d225678fa2dae566`;
 let query = `js`; // takes from form
 let page = 1; // pagination while search movie
 let movieId = 701189; // data-attribute of the backdrop img
 
+const modalOverley = document.querySelector('.lightbox__overlay');
+
 const fetchIt = URL => {
-  fetch(URL).then(res => res.json());
-  // .then(src => console.log(src.results));
-};
-
-const makesTrendingMkp = () => {
-  const URLTrending = `https://api.themoviedb.org/3/trending/all/day?api_key=${apiKey}`; //constant
-
-  fetchIt(URLTrending).then(src => movieCardMkp(src.results)); //сделать хендлбар функцию movieCardMkp для одной карточки и заимпортировать
+  return fetch(URL).then(res => res.json());
 };
 
 const makesSearchMkp = (query, page) => {
@@ -23,7 +20,9 @@ const makesSearchMkp = (query, page) => {
 const makesModalMkp = movieId => {
   const URLMovie = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`;
 
-  fetchIt(URLSearch).then(src => movieModalCardMkp(src.results)); //сделать хендлбар функцию movieModalCardMkp для МОДАЛКИ и заимпортировать
+  return fetchIt(URLMovie).then(
+    src => (modalOverley.innerHTML = modalTpl(src)),
+  );
 };
 
-// fetchTrending(URLTrending);
+export { fetchIt, apiKey, makesModalMkp };

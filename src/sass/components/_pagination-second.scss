@@ -1,0 +1,134 @@
+button {
+  color: inherit;
+}
+
+.block-pagination {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.ishidden {
+  display: none;
+}
+
+.stable-button-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.stable-button-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 100%;
+  border: transparent;
+  outline: none;
+  border-radius: 5px;
+}
+
+.stable-button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: transparent;
+  outline: none;
+  border-radius: 5px;
+  &:hover {
+    color: $primaryTextColor;
+    background-color: $accentColor;
+  }
+}
+
+.block-pagination-hidden {
+  display: flex;
+  max-width: 360px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.block-pagination-list {
+  display: flex;
+  max-width: 200px;
+  height: 100%;
+}
+
+.move {
+  transform: translateX(-100%);
+}
+
+.block-pagination-item {
+  border: transparent;
+  outline: none;
+  border-radius: 5px;
+}
+
+.block-pagination-left {
+  width: 40px;
+  height: 100%;
+  border: transparent;
+  outline: none;
+  border-radius: 5px;
+}
+
+.block-pagination-buttons {
+  width: 40px;
+  height: 100%;
+  border: transparent;
+  outline: none;
+  border-radius: 5px;
+  background-color: transparent;
+  &:hover {
+    color: $primaryTextColor;
+    background-color: $accentColor;
+  }
+}
+
+.current-page {
+  background-color: $accentColor;
+  color: $primaryTextColor;
+}
+
+.block-pagination-right {
+  width: 40px;
+  height: 100%;
+  border: transparent;
+  outline: none;
+  border-radius: 5px;
+}
+
+.block-pagination-image {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.btn-page:hover,
+.btn-page:focus {
+  background-color: $accentColor;
+  color: $primaryTextColor;
+}
+
+.left:hover,
+.left:focus {
+  background-color: $accentColor;
+  color: $primaryTextColor;
+}
+
+.rigth:hover,
+.rigth:focus {
+  background-color: $accentColor;
+  color: $primaryTextColor;
+}
+
+.stable-button-container-prev,
+.stable-button-container-next {
+  height: 100%;
+}
