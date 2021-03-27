@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitaliy-z/js-project-group4.git"
+    "url": "git+https://github.com/Vitaliy-Z/js-project-group4.git"
   },
   "keywords": [],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vitaliy-z/js-project-group4/issues"
+    "url": "https://github.com/Vitaliy-Z/js-project-group4/issues"
   },
-  "homepage": "https://vitaliy-z.github.io/js-project-group4",
+  "homepage": "https://Vitaliy-Z.github.io/js-project-group4",
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-transform-runtime": "^7.12.1",
